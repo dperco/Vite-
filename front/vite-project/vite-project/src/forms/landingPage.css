@@ -1,0 +1,47 @@
+ .bg-image {
+    background-image: url('./css/images/fondo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+   .container-fluid {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+  }
+.title {
+  
+    align-self: flex-start;
+    margin-block-end: 10px;
+  }
+
+  .mt-0 {
+    margin-block-start: 30px;
+    color: rgb(27, 27, 16);
+  }
+
+  nav {
+    margin-block-start: 180px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  li {
+    margin-block-end: 10px;
+  }
+  
+  .listar {
+    margin-block-start: 10px;
+  }
+  
+  .crear {
+    margin-block-start: 10px;
+  }
+  

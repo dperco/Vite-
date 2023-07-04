@@ -1,0 +1,144 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* body {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-block-size: 100vh;
+  
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 100vh;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  
+
+   /* Agregamos scroll horizontal si el contenido excede el ancho del contenedor */
+}
+
+@keyframes moveItems {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.box {
+  flex-shrink: 0;
+  inline-size: 100px; /* Evita que los elementos se reduzcan para ajustarse en una línea */
+  margin-inline-end: 20px;
+  transition: transform 0.3s ease;
+  
+}
+
+.box:hover {
+  transform: translateX(10px); /* Movimiento horizontal de 10px al pasar el cursor sobre el elemento */
+}
+
+/* .image-container {
+  display: flex;
+  justify-content:flex-start; 
+  align-items:flex-end;/* Alinea los elementos a la izquierda */
+
+/*
+.image-container img {
+  margin-inline-start: 10px; /* Espacio entre los elementos */
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline-end: 10px;
+    border-radius: 10px;
+    inline-size: 100%;
+    block-size: auto;
+    animation: moveItems 10s infinite linear;
+  }
+  
+  .image-container img {
+    margin-inline-end: 10px;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+
+.badge-text-bg-secondary{
+  display: flex;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
